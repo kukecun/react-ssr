@@ -1,3 +1,12 @@
+# 目录结构
++ logs => 日志输出目录
++ pm2 => 线上启动配置
++ src => 资源目录
+  + build => webpack构建
+  + client => 用户端
+  + conf => 配置文件
+  + server => 服务端
+
 # 启动方式
 cnpm i 
 
