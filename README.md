@@ -4,6 +4,9 @@
 + src => 资源目录
   + build => webpack构建
   + client => 用户端
+    + dist => 打包目录
+    + enter => 入口文件
+      + main.js => 核心文件配置入口
   + conf => 配置文件
   + server => 服务端
 
