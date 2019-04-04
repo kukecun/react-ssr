@@ -1,0 +1,72 @@
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,a,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block; font-weight: 300;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th,em{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,strong,b{font-weight:500;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend,div,span,p{
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif !important;
+    outline:0;
+    line-height: 1.5;
+}
+html{ width: 100%; height: 100%;}
+body{width: 100%; height: 100%;}
+#app,.app-main{ width: 100%; height: 100%;}
+a,a:hover{}
+a {outline: none;}
+a:active {star:"expression(this.onFocus=this.blur())";}
+
+/*滚动条*/
+*::-webkit-scrollbar-track{ background-color:#f0f4fb;}
+*::-webkit-scrollbar{ width:6px; background-color:#f0f4fb;}
+*::-webkit-scrollbar-thumb{ background-color:#888;}
+
+/*input-placeholder*/
+::-webkit-input-placeholder{ color:$input-placeholder-color!important;}
+::-moz-placeholder{ color:$input-placeholder-color!important;;}
+:-ms-input-placeholder{ color:$input-placeholder-color!important;;}
+input:-moz-placeholder{ color:$input-placeholder-color!important;;}
+input,button,textarea {
+    -webkit-appearance: none;
+}
+input[type=file] {
+    //opacity: 0;
+    //width: 100%;
+    //height: 100%;
+}
+div,p,span,a,section,em,h1,h2,h3,h4,h5,h6,small,em,ul,li,dl,dt,dd,i,label,sub,sup{
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('/src/styles/iconfont/iconfont.eot');
+  src: url('/src/styles/iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('/src/styles/iconfont/iconfont.woff2') format('woff2'),
+      url('/src/styles/iconfont/iconfont.woff') format('woff'),
+      url('/src/styles/iconfont/iconfont.ttf') format('truetype'),
+      url('/src/styles/iconfont/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

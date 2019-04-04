@@ -1,0 +1,15 @@
+
+// rem布局
+$r: 16rem/750;
+@function n($n)	{ @return $n * $r;}
+
+// 图片路径
+$imgPath: '~@/images';
+
+$input-placeholder-color: #ccc;
+
+// 字体
+$color-h: #1da1f2;
+
+// 下划线
+$border-def: #f1f1f1;

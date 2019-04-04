@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+    <meta name="keywords" content="<%= meta.keywords %>"/>
+    <meta name="description" content="<%= meta.description %>"/>
+    <title><%= meta.title %></title>
+    <link rel="stylesheet" href="/dist/<%= G.dist %>/main.css?_=<%= G.time %>">
+    <script type="text/javascript" src="/lib/reset.rem.js?_=<%= G.time %>"></script>
+    <style type="text/css">html,body{ font-size: 23.4375px;}</style>
+
+    <% if(G.env != 9) { %>
+      <script src="//cdn.bootcss.com/vConsole/3.2.0/vconsole.min.js"></script>
+      <script>
+        const vConsole = new VConsole();
+      </script>
+    <% } %>
+
+    <script type="text/javascript">
+      window.$G = <%- JSON.stringify(G) %>;
+      window.$preloadedState = <%- JSON.stringify(preloadedState) %>;
+    </script>
+
+	</head>
+
+	<body>
+    <div id="app" class="g-app"><% if(G.env != '0') { %><%- content %><% } %></div>
+
+    <script type="text/javascript" src="/lib/jquery-2.2.4.min.js?_=<%= G.time %>"></script>
+    <% for(let a in G.jslist) { %>
+      <% if(G.jslist[a] && G.jslist[a].url) { %>
+        <script type="text/javascript" src="<%= G.jslist[a].url %>"></script>
+      <% } %>
+    <% } %>
+    <script type="text/javascript" src="/lib/vendor.js?_=<%= G.time %>"></script>
+    <script type="text/javascript" src="/dist/<%= G.dist %>/main.js?_=<%= G.time %>"></script>
+  </body>
+</html>

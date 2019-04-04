@@ -1,0 +1,10 @@
+{
+  "apps": [{
+      "name"		: "react-ssr",
+      "script"		: "../src/server/server.prod.js",
+      "error_file"	: "./pm2log/node-err.log",
+      "out_file"	: "./pm2log/node-out.log",
+      "pid_file"	: "./pm2log/node.pid",
+      "watch"		: false
+    }]
+}
